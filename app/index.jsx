@@ -1,6 +1,7 @@
 import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
 import React from "react";
 import images from "../constants/images";
+import { router } from "expo-router";
 
 const Index = () => {
   return (
@@ -30,7 +31,7 @@ const Index = () => {
         {/* Custom Button */}
         <TouchableOpacity
           className="w-4/5 bg-primary py-4 rounded-xl"
-          onPress={() => console.log("Button Pressed!")}
+          onPress={() => router.push("/sign-up")}
           activeOpacity={0.7}
         >
           <Text className="text-white text-lg font-bold text-center">
