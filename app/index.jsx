@@ -32,6 +32,7 @@ const Index = () => {
         {/* Custom Button */}
         <TouchableOpacity
           className="w-4/5 bg-primary py-4 rounded-xl"
+
           onPress={() => router.push("/sign-in")}
           activeOpacity={0.7}
         >
